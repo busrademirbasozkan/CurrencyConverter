@@ -41,12 +41,19 @@ class ViewController: UIViewController {
                 self.present(alert, animated: true)
             }else{
                 //(2. adım)
-                
-                
-                
-                
+                if data != nil {
+                    do{
+                        let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
+                        
+                        DispatchQueue.main.async {
+                            print(jsonResponse)
+                        }
+                    }catch{
+                    }
+                }
             }
         }
+        task.resume() // task içindeki işlemlerin başlaması için kullanılır
         
     }
 }
