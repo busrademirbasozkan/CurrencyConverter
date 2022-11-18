@@ -89,7 +89,7 @@
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="getRatesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7l-6j-IZv"/>
+                                    <action selector="getRatesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhv-m2-pTs"/>
                                 </connections>
                             </button>
                         </subviews>
